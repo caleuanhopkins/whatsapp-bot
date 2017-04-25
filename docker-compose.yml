@@ -1,0 +1,8 @@
+version: "2"
+services:
+  yowsup:
+    build: .
+    volumes:
+      - ./data:/root/.yowsup
+      - ./app:/app
+    entrypoint: "tail -f /dev/null"
